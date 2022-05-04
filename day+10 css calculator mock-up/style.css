@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  box-sizing: border-box;
+  font-family: "DungGeunMo";
+  font-size: 30px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #dadce0, #FFFADB); 
+}
+/*
+Calculator styles
+*/
+
+.calculator {
+  background-color: #B3AACD;/*B2A8D1*/
+  box-shadow: 3px 3px 10px 4px #C1C4C6;
+  
+  border-radius: 10px;
+  padding: 30px 20px;
+  
+  width: 400px;
+  height: 450px; 
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+
+.calculator__display--bare {
+  /* display: none; */
+  background-color: #F2EEE4;
+  box-shadow: 1px 1px 5px 2px #8A7895 inset;
+  
+  text-align: center;
+  vertical-align: middle;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.calculator__display--bare > span {
+  display: inline-block;
+  text-align: center;
+  background-color: #F2EEE4;
+  margin: 5px;
+  width: 40px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 5px;
+}
+
+.calculator__display--for-advanced {
+  display: none;
+  background-color: #F2EEE4;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.calculator__buttons {
+  background-color: #B3AACD; /*#B2A8D1*/
+  margin-top: 30px;
+  border-radius: 10%;
+  width: 360px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.container_left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
+.container_right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 90px;
+}
+
+.container_right > .calculate {
+  flex: 3;
+}
+
+.container_right > .operator {
+  flex: 1;
+}
+
+.container_right > .clear {
+  flex: 1;
+}
+
+.button__row {
+  background-color: #B3AACD;
+  display: flex;
+  flex: 2;
+}
+
+.button__row__bottom {
+  display: flex;
+}
+
+.button__row button {
+  flex: 1;
+}
+
+.button__row__bottom > .double {
+  flex: 2;
+  height: 55px;
+}
+
+.button__row__bottom > .decimal {
+  flex: 1;
+  height: 55px;
+}
+
+button {
+  border: 1px solid #B2A8D1;
+  border-radius: 20%;
+  box-shadow: 1px 1px 3px 2px #dadce0 inset; 
+  border-bottom: 4px solid #C1C4C6;
+  border-right: 3px solid #B4B4B4;
+  
+  background-color: #5B4A7E;
+  background: linear-gradient(45deg, #dadce0, #B2A8D1); 
+  
+  color: #ffffff;
+  text-shadow: 0 3px 1px #B2A8D1;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.button__row > .isPressed {
+  background-color: #00da75;
+}
