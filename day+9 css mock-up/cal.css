@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/*
+Calculator styles
+*/
+
+.calculator {
+  background-color: skyblue;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.calculator__display--bare {
+  /* display: none; */
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.calculator__display--bare > span {
+  display: inline-block;
+  text-align: center;
+  background-color: #f3f0fc;
+  margin: 5px;
+  width: 40px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 5px;
+}
+
+.calculator__display--for-advanced {
+  display: none;
+  background-color: #ffffff;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.calculator__buttons {
+  background-color: skyblue;
+  width: 100%;
+  height: 350px;
+  margin-top: 10px;
+  border-radius: 10px;
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.container_left {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+}
+
+.container_right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.button__row {
+  background-color: #skyblue;
+  flex: 1;
+  display: flex;
+}
+
+.button__row button {
+  flex: 1;
+}
+
+.button__row__bottom {
+  display: flex;
+}
+
+.button__row__bottom > .double {
+  flex: 2.2;
+  height: 55px;
+}
+
+.button__row__bottom > .decimal {
+  flex: 1;
+  height: 55px;
+}
+}
+
+.container_right {
+  height: 200px;
+}
+
+.container_right > .operator {
+  flex: 1;
+}
+
+.container_right > .clear {
+  flex: 1;
+}
+
+.container_right > .calculate {
+  flex: 2.2;
+}
+
+.button__row > .isPressed {
+  background-color: #00da75;
+}
+
+button {
+  border-radius: 20%;
+  border: 1px solid black;
+  background-color: beige;
+  font-size: 20px;
+}
